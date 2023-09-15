@@ -9,7 +9,8 @@
 // document.querySelector('.guess').value=23;
 
 let score=20;
-let secretnumber=Math.trunc(Math.random()*21)
+let secretnumber=Math.trunc(Math.random()*21);
+let highscore=0;
 
 document.querySelector('.check').addEventListener('click',function(){
    const guess=Number(document.querySelector('.guess').value);
@@ -22,6 +23,11 @@ else if(guess===secretnumber){
     document.querySelector('body').style.backgroundColor='#60b347';
     document.querySelector('.number').style.width='30rem';
     document.querySelector('.number').textContent=secretnumber;
+
+    if(score>highscore){
+        highscore=score;
+        document.querySelector('.highscore').textContent=highscore;
+    }
 }
 else if(guess>secretnumber){
 
@@ -63,7 +69,7 @@ document.querySelector('.again').addEventListener('click',function(){
      document.querySelector('.guess').value='';
     
 
-     document.querySelector('body').style.backgroundColor='#222222';
+     document.querySelector('body').style.backgroundColor='#222';
      document.querySelector('.number').style.width='15rem';
 ///front schock n back....shock mountain *2 
 })
