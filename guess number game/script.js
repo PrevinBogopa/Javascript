@@ -61,7 +61,7 @@ else if(guess<secretnumber){
 document.querySelector('.again').addEventListener('click',function(){
 
      score=20;
-     secretnumber=Math.trunc(Math.random()*21);
+     secretnumber=Math.trunc(Math.random()*101);
      document.querySelector('.message').textContent='Start guessing...';
      document.querySelector('.score').textContent=score;
     
