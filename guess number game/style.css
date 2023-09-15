@@ -35,14 +35,7 @@ html {
     height: 25vh;
     border-bottom: 2px solid #eee;
   }
-  .guess {
-    background: none;
-    padding: 2rem;
-    width: 10rem;
-    text-align: center;
-    display: block;
-    margin-bottom: 1rem;
-  }
+
   .number {
     background: #eee;
     color: #333;
