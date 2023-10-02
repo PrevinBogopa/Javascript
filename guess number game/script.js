@@ -9,7 +9,7 @@
 // document.querySelector('.guess').value=23;
 
 let score=20;
-let secretnumber=Math.trunc(Math.random()*101);
+let secretnumber=Math.trunc(Math.random()*21);
 let highscore=0;
 
 document.querySelector('.check').addEventListener('click',function(){
